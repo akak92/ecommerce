@@ -1,0 +1,6 @@
+.item-list-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    height: 100vh; 
+    text-align: center; 
+  }

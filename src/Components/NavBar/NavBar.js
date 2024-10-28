@@ -1,7 +1,7 @@
 import React from 'react';
-import CartWidget from './CartWidget';
+import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css';
-import logo from '../assets/logo_tienda.png';
+import logo from '../../assets/logo_tienda.png';
 
 function NavBar() {
   return (
