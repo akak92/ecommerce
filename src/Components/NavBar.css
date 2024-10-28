@@ -3,15 +3,27 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #00c4cc;
+    background-color: #00c4cc; /* Color celeste */
     color: #fff;
   }
   
   .logo {
-    font-size: 1.5em;
+    display: flex;
+    align-items: center;
   }
   
-  .navLinks {
+  .logo-img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .store-name {
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  .nav-links {
     list-style: none;
     display: flex;
     gap: 15px;
@@ -22,14 +34,15 @@
     text-decoration: none;
   }
   
-  .cart {
+  .cart-widget {
     display: flex;
     align-items: center;
   }
   
-  .cartCount {
+  .cart-count {
     margin-left: 5px;
     background-color: red;
     border-radius: 50%;
     padding: 2px 8px;
+    color: #fff;
   }

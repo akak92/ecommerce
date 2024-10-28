@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Container mensaje="¡Bienvenidos a mi tienda online!" />
+      <Container mensaje="¡Bienvenidos a Mi Tienda!" />
     </div>
   );
 }
