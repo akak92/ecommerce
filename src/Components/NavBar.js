@@ -11,6 +11,7 @@ function NavBar() {
       <ul className="navLinks">
         <li><a href="#inicio" className="link">Inicio</a></li>
         <li><a href="#productos" className="link">Productos</a></li>
+        <li><a href="#quienes-somos" className="link">¿Quienes somos?</a></li>
         <li><a href="#contacto" className="link">Contacto</a></li>
       </ul>
       <div className="cart">
