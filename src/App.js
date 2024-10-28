@@ -1,12 +1,12 @@
 import React from 'react';
 import NavBar from './Components/NavBar';
-import Container from './Components/Container';
+import ItemListContainer from './Components/ItemListContainer';
 
 function App() {
   return (
     <div>
       <NavBar />
-      <Container mensaje="¡Bienvenidos a Mi Tienda!" />
+      <ItemListContainer mensaje="¡Bienvenidos a nuestra tienda online!" />
     </div>
   );
 }
