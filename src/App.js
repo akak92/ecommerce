@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./Components/layouts/NavBar/NavBar"
+import NavBar from "./Components/layouts/NavBar/NavBar";
+import Footer from "./Components/layouts/Footer/Footer";
 import ItemListContainer from "./Components/pages/ItemListContainer/ItemListContainer";
 import Cart from "./Components/pages/Cart/Cart";
 import ItemDetail from "./Components/pages/ItemDetail/ItemDetail";
@@ -15,6 +16,7 @@ function App() {
       <Route path="/itemDetail/:id" element={<ItemDetail />} />
       <Route path="/checkout" element={<Checkout />} />
     </Routes>
+    <Footer />
   </BrowserRouter>
 }
 
