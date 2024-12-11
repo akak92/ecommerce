@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../../../products";
+import  Counter  from "../../common/Counter/Counter";
+
 import "./ItemDetail.css"
 
 const ItemDetail = () => {
@@ -19,6 +21,8 @@ const ItemDetail = () => {
             <p className="product-description">{product.description}</p>
             <p className="product-price">{product.price}</p>
             <p className="product-category">Category: {product.category}</p>
+            <p className="product-category">stock disponible: {product.stock} u</p>
+            {product.stock !== undefined && <Counter product={product} />}
         </div>
     );
 };

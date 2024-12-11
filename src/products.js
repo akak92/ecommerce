@@ -6,6 +6,7 @@ const products = [
       description: "Monitor 4K UHD con soporte HDR10, ideal para gaming y diseño.",
       price: "$749.99",
       category: "monitor",
+      stock: 15,
     },
     {
       id: 2,
@@ -14,6 +15,7 @@ const products = [
       description: "Monitor gaming 1440p, 165Hz y G-Sync compatible.",
       price: "$329.99",
       category: "monitor",
+      stock: 5,
     },
     {
       id: 3,
@@ -22,6 +24,7 @@ const products = [
       description: "Monitor curvado ultra ancho de 34” con resolución UWQHD.",
       price: "$999.99",
       category: "monitor",
+      stock: 6,
     },
     {
       id: 4,
@@ -30,6 +33,7 @@ const products = [
       description: "Ratón ergonómico de alto rendimiento con 11 botones programables.",
       price: "$49.99",
       category: "mouse",
+      stock: 11,
     },
     {
       id: 5,
@@ -38,6 +42,7 @@ const products = [
       description: "Ratón para gaming con sensor óptico de 16,000 DPI.",
       price: "$69.99",
       category: "mouse",
+      stock: 6,
     },
     {
       id: 6,
@@ -46,6 +51,7 @@ const products = [
       description: "Ratón con doble sensor y peso ajustable para un control preciso.",
       price: "$79.99",
       category: "mouse",
+      stock: 4,
     },
     {
       id: 7,
@@ -54,6 +60,7 @@ const products = [
       description: "Teclado mecánico RGB con switches Cherry MX y teclas multimedia.",
       price: "$199.99",
       category: "keyboard",
+      stock: 10,
     },
     {
       id: 8,
@@ -62,6 +69,7 @@ const products = [
       description: "Teclado mecánico con interruptores intercambiables.",
       price: "$129.99",
       category: "keyboard",
+      stock: 9,
     },
     {
       id: 9,
@@ -69,6 +77,7 @@ const products = [
       img: "https://gorilagames.com/img/Public/1019-producto-teclado-hyperx-origins-60-aqua-1-9668.jpg", // Teclado
       description: "Teclado compacto de 60% con switches ópticos y retroiluminación RGB.",
       price: "$119.99",
+      stock: 11,
     },
     {
       id: 10,
@@ -77,6 +86,7 @@ const products = [
       description: "Teclado mecánico compacto con retroiluminación RGB y conectividad inalámbrica.",
       price: "$89.99",
       category: "keyboard",
+      stock: 14,
     },
   ];
   

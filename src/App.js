@@ -5,9 +5,11 @@ import ItemListContainer from "./Components/pages/ItemListContainer/ItemListCont
 import Cart from "./Components/pages/Cart/Cart";
 import ItemDetail from "./Components/pages/ItemDetail/ItemDetail";
 import Checkout from "./Components/pages/Checkout/Checkout";
+import { CartContextProvider } from "./context/CartContext";
 
 function App() {
   return <BrowserRouter>
+  <CartContextProvider>
     <NavBar />
     <Routes>
       <Route path="/" element={<ItemListContainer />}/>
@@ -17,6 +19,7 @@ function App() {
       <Route path="/checkout" element={<Checkout />} />
     </Routes>
     <Footer />
+    </CartContextProvider>
   </BrowserRouter>
 }
 

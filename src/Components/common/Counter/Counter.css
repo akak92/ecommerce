@@ -1,0 +1,47 @@
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.counter-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-button {
+    background-color: #00c4cc;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.counter-button:hover {
+    background-color: #0056b3;
+}
+
+.add-to-cart {
+    background-color: #28a745; /* Verde */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
