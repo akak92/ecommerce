@@ -4,11 +4,12 @@ import { CartContext } from "../../../context/CartContext";
 
 function CartWidget() {
 
-  const {cart} = useContext(CartContext);
+  const {getTotalElements} = useContext(CartContext);
+  let totalElements = getTotalElements()
   return (
     <Link to="/cart">
     <div className="cart-widget">
-      🛒 <span className="cart-count">{cart.length}</span>
+      🛒 <span className="cart-count">{totalElements}</span>
     </div>
     </Link>
   );

@@ -18,7 +18,7 @@ const ProductCard = ({product}) => {
         }}
     />
     <p>{product.description}</p>
-    <p>{product.price}</p>
+    <p>${product.price}</p>
     <Link to={`/itemDetail/${product.id}`}>ver detalle</Link>
     </div>
     );

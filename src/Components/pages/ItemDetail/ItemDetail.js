@@ -19,7 +19,7 @@ const ItemDetail = () => {
             <h2>{product.title}</h2>
             <img src={product.img} alt={product.title} className="product-img" />
             <p className="product-description">{product.description}</p>
-            <p className="product-price">{product.price}</p>
+            <p className="product-price">${product.price}</p>
             <p className="product-category">Category: {product.category}</p>
             <p className="product-category">stock disponible: {product.stock} u</p>
             {product.stock !== undefined && <Counter product={product} />}

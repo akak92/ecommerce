@@ -1,25 +1,33 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
+import "./Cart.css";
 
-const Cart  = () => {
-    const { cart } = useContext(CartContext)
-    return <div>
-       <h2>Pagina Cart</h2>
-       {
-        cart.map( el => {
-            return <div 
-                    key={el.id}
-                    style={{ border: "2px solid black", padding: "20px"}}>
-                <h3>{el.title}</h3>
-                <h3>cantidad: {el.quantity}</h3>
-                <h3>precio unitario: {el.price}</h3>
-                <buton>Eliminar</buton>
-            </div>
-            }
-        )
-       }
-       <button>Limpiar carrito</button>
-    </div>
-}
+const Cart = () => {
+    const { cart, resetCart, removeProduct, getTotalPrice } = useContext(CartContext);
+    let totalAmount = getTotalPrice();
+
+    return (
+        <div className="cart-container">
+            <h2 className="cart-header">Carrito de compras</h2>
+            {cart.map(el => (
+                <div key={el.id} className="cart-item">
+                    <img src={el.img} alt={el.title} className="cart-item-image" />
+                    <div className="cart-item-details">
+                        <h3>{el.title}</h3>
+                        <h3>Cantidad: {el.quantity}</h3>
+                        <h3>Precio unitario: ${el.price}</h3>
+                    </div>
+                    <button onClick={() => removeProduct(el.id)}>Eliminar</button>
+                </div>
+            ))}
+            {cart.length > 0 && (
+                <div className="cart-footer">
+                    <button onClick={resetCart}>Vaciar carrito</button>
+                    <h3>Total Compra: ${totalAmount}</h3>
+                </div>
+            )}
+        </div>
+    );
+};
 
 export default Cart;
