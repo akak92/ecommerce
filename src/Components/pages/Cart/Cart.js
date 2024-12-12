@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import {Link} from "react-router-dom"
 import { CartContext } from "../../../context/CartContext";
 import "./Cart.css";
 
@@ -23,6 +24,9 @@ const Cart = () => {
             {cart.length > 0 && (
                 <div className="cart-footer">
                     <button onClick={resetCart}>Vaciar carrito</button>
+                    <Link to="/checkout">
+                        <button>Finalizar Compra</button>
+                    </Link>
                     <h3>Total Compra: ${totalAmount}</h3>
                 </div>
             )}

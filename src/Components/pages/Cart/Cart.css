@@ -50,6 +50,10 @@
 .cart-footer {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Alinea los elementos horizontalmente */
+    gap: 15px; /* Espaciado entre botones */
+    flex-wrap: wrap; /* Permite que los botones se muevan a una nueva línea si no hay suficiente espacio */
 }
 
 .cart-footer button {
@@ -95,4 +99,17 @@
 
 .cart-item-details {
     flex-grow: 1;
+}
+
+.cart-footer button {
+    padding: 10px 20px;
+    background-color: #00c4cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 150px; /* Tamaño fijo opcional */
+    text-align: center;
 }

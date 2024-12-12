@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { products } from "../../../products";
 import  Counter  from "../../common/Counter/Counter";
+import { db } from "../../../firebaseConfig";
+import { collection, doc, getDoc } from "firebase/firestore";
 
 import "./ItemDetail.css"
 
@@ -10,8 +11,10 @@ const ItemDetail = () => {
     const [product, setProduct] = useState({}); 
 
     useEffect(() => {
-        const productSelected = products.find((el) => el.id === +id);
-        setProduct(productSelected);
+        let productCollection = collection(db, "products");
+        let refDoc = doc(productCollection, id);
+        const getDocById = getDoc(refDoc);
+        getDocById.then((res) => setProduct({...res.data(), id : res.id}))
     }, [id]);
 
     return (
