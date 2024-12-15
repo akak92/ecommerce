@@ -4,6 +4,7 @@ import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import { db } from "../../../firebaseConfig";
 import { collection, getDocs, query, where } from "firebase/firestore";
+import { BounceLoader } from "react-spinners";
 
 const ItemListContainer = () => {
   const [myProducts, setMyProducts] = useState([]);
@@ -27,7 +28,16 @@ const ItemListContainer = () => {
     });
   }, [name]);
 
-  return <ItemList myProducts={myProducts} />
+  return (
+    <div>
+      { myProducts.length === 0 ?
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+              <BounceLoader color="#00c4cc" size={80} />
+        </div> :
+      <ItemList myProducts={myProducts} />
+      }
+    </div>
+  )
 };
 
 export default ItemListContainer;
