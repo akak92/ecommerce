@@ -24,3 +24,6 @@ Actualmente, el proyecto se encuentra desplegado utilizando la tecnología `Verc
 ```
 https://ecommerce-brown-three.vercel.app/
 ```
+
+### Nota adicional
+Este proyecto utiliza `create-react-app`. Idealmente, para futuras versiones de esta aplicación, será migrada a `Vite`.
