@@ -6,9 +6,15 @@ import Cart from "./Components/pages/Cart/Cart";
 import ItemDetail from "./Components/pages/ItemDetail/ItemDetail";
 import Checkout from "./Components/pages/Checkout/Checkout";
 import { CartContextProvider } from "./context/CartContext";
+import { SnackbarProvider } from "notistack";
 
 function App() {
-  return <BrowserRouter>
+  return <SnackbarProvider maxSnack={3}
+  anchorOrigin={{
+    vertical: 'top', // Parte superior
+    horizontal: 'center', // Centro
+  }}>
+  <BrowserRouter>
   <CartContextProvider>
     <NavBar />
     <Routes>
@@ -21,6 +27,7 @@ function App() {
     <Footer />
     </CartContextProvider>
   </BrowserRouter>
+  </SnackbarProvider>
 }
 
 export default App;
