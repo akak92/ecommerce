@@ -5,7 +5,7 @@ import { CartContext } from "../../../context/CartContext";
 
 const Counter = ({ product }) => {
     const [count, setCount] = useState(1);
-    const { addToCart } = useContext(CartContext);
+    const { addToCart, cart } = useContext(CartContext);
     const { enqueueSnackbar } = useSnackbar();
 
     const handleIncrement = () => {
@@ -25,11 +25,16 @@ const Counter = ({ product }) => {
     };
 
     const onAdd = () => {
-        let productToCart = { ...product, quantity: count };
-        addToCart(productToCart);
-        enqueueSnackbar("Producto agregado al carrito.", { variant: "success" });
+        const productInCart = cart.find(item => item.id === product.id);
+    
+        if (productInCart) {
+            enqueueSnackbar("El producto ya se encuentra en el carrito.", { variant: "info" });
+        } else {
+            let productToCart = { ...product, quantity: count };
+            addToCart(productToCart);
+            enqueueSnackbar("Producto agregado al carrito.", { variant: "success" });
+        }
     };
-
     return (
         <div className="counter-container">
             <div className="counter-controls">

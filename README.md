@@ -16,7 +16,7 @@ El proyecto está organizado en componentes reutilizables que facilitan el desar
 ## Inicializar localmente
 
 ```
-npm run dev
+npm run start
 ```
 Nota: para que el proyecto funcione correctamente debe contar con el archivo `.env` con las variables de entorno previamente cargadas.
 ## Vercel
@@ -26,4 +26,4 @@ https://ecommerce-brown-three.vercel.app/
 ```
 
 ### Nota adicional
-Este proyecto utiliza `create-react-app`. Idealmente, para futuras versiones de esta aplicación, será migrada a `Vite`.
+Este proyecto utiliza `create-react-app`. Idealmente, para futuras versiones de esta aplicación será migrada a `Vite`.
