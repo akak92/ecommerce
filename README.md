@@ -1,6 +1,6 @@
 # E-commerce React Project
 
-Este proyecto es la base para las entregas del curso de React en el que estoy participando. El objetivo es construir un sitio web de comercio electrónico utilizando React, donde se pueden mostrar productos, gestionar un carrito de compras y ofrecer una experiencia de usuario interactiva y atractiva.
+Este proyecto es la Entrega Final del curso de `ReactJS` del que participé en `CoderHouse`. El objetivo es construir un sitio web de comercio electrónico, donde se pueden mostrar productos, gestionar un carrito de compras y ofrecer una experiencia de usuario interactiva y atractiva.
 
 ## Tecnologías Utilizadas
 
@@ -11,10 +11,16 @@ Este proyecto es la base para las entregas del curso de React en el que estoy pa
 
 ## Estructura del Proyecto
 
-El proyecto está organizado en componentes reutilizables que facilitan el desarrollo y la gestión de la aplicación. Los principales componentes incluyen:
+El proyecto está organizado en componentes reutilizables que facilitan el desarrollo y la gestión de la aplicación dentro de la carpeta `src`
 
-- **NavBar**: Barra de navegación que contiene el logo de la tienda, enlaces a diferentes secciones y un widget del carrito de compras.
-- **CartWidget**: Componente que muestra el ícono del carrito de compras y la cantidad de artículos en él.
-- **ItemListContainer**: Componente que mostrará el catálogo de productos y acepta props para personalizar el mensaje de bienvenida y la lista de productos.
+## Inicializar localmente
 
-
+```
+npm run dev
+```
+Nota: para que el proyecto funcione correctamente debe contar con el archivo `.env` con las variables de entorno previamente cargadas.
+## Vercel
+Actualmente, el proyecto se encuentra desplegado utilizando la tecnología `Vercel`, para poder acceder al sitio, simplemente acceder al siguiente enlace:
+```
+https://ecommerce-brown-three.vercel.app/
+```
