@@ -22,7 +22,6 @@ const Checkout  = () => {
 
     const sendFormulario = (e) => {
         e.preventDefault();
-        console.log("se envian a la api los siguientes datos:", userData);
         let total = getTotalPrice()
         let order = {
             buyer: userData,
